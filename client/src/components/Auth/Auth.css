@@ -1,0 +1,10 @@
+.auth {
+  min-height: 100vh;
+}
+
+#loginForm__link:hover,
+#signUpForm__link:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  text-decoration: underline;
+}

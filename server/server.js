@@ -61,10 +61,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.static("images"));
-app.listen(process.env.PORT || 4848);
+app.listen(4747);
 
 mongoose
-  .connect(process.env.DB_URI, { dbName: "ecommerce" })
+  .connect("mongodb+srv://tuitionforcoding:GcsrakEBstLyqUrW@cluster0.bhavvhf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", { dbName: "ecommerce" })
   .then((response) => {
     console.log("MongoDB server connected");
   })
